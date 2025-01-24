@@ -204,7 +204,7 @@ setTimeout(() => {
     funnyMessage.style.color = 'red'; // Change color for emphasis
     funnyMessage.style.opacity = '1'; // Fade in
     funnyMessage.style.transform = 'scale(1.2)'; // Scale it up
-}, 3000);
+}, 10000);
 
 
 
