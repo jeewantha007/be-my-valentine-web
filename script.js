@@ -182,7 +182,6 @@ funnyMessage.innerHTML = "Now there's no escaping me! 😜";
 funnyMessage.style.color = 'green';
 funnyMessage.style.transition = 'opacity 1s, transform 1s';
 
-
 // Start with an invisible message
 funnyMessage.style.opacity = '0';
 funnyMessage.style.transform = 'scale(0.8)';
@@ -193,17 +192,20 @@ setTimeout(() => {
     funnyMessage.style.transform = 'scale(1)';
 }, 500);
 
-// Add a delayed funny follow-up with animation
+// Add a delayed funny follow-up with fade out transition for the first message
+setTimeout(() => {
+    funnyMessage.style.opacity = '0';  // Fade out the first message
+    funnyMessage.style.transform = 'scale(0.8)'; // Shrink it slightly
+}, 2500);
+
+// Show the second funny follow-up with smooth animation
 setTimeout(() => {
     funnyMessage.innerHTML = "Just kidding... You're stuck with the best! 😉";
     funnyMessage.style.color = 'red'; // Change color for emphasis
-    funnyMessage.style.transform = 'scale(1.2)';
+    funnyMessage.style.opacity = '1'; // Fade in
+    funnyMessage.style.transform = 'scale(1.2)'; // Scale it up
 }, 3000);
 
-// Reset the scale back to normal
-setTimeout(() => {
-    funnyMessage.style.transform = 'scale(1)';
-}, 4000);
 
 
 
