@@ -176,35 +176,7 @@ document.getElementById('display-1').innerHTML =
 document.getElementById('display-1').style.color = 'gold';
 document.getElementById('display-1').style.fontWeight = 'bold';
 
-// Add a funny follow-up message using display-3
-const funnyMessage = document.getElementById('display-3');
-funnyMessage.innerHTML = "Now there's no escaping me! 😜";
-funnyMessage.style.color = 'green';
-funnyMessage.style.transition = 'opacity 1s, transform 1s';
 
-// Start with an invisible message
-funnyMessage.style.opacity = '0';
-funnyMessage.style.transform = 'scale(0.8)';
-
-// Show the message with animation
-setTimeout(() => {
-    funnyMessage.style.opacity = '1';
-    funnyMessage.style.transform = 'scale(1)';
-}, 500);
-
-// Add a delayed funny follow-up with fade out transition for the first message
-setTimeout(() => {
-    funnyMessage.style.opacity = '0';  // Fade out the first message
-    funnyMessage.style.transform = 'scale(0.8)'; // Shrink it slightly
-}, 2500);
-
-// Show the second funny follow-up with smooth animation
-setTimeout(() => {
-    funnyMessage.innerHTML = "Just kidding... You're stuck with the best! 😉";
-    funnyMessage.style.color = 'red'; // Change color for emphasis
-    funnyMessage.style.opacity = '1'; // Fade in
-    funnyMessage.style.transform = 'scale(1.2)'; // Scale it up
-}, 10000);
 
 
 
